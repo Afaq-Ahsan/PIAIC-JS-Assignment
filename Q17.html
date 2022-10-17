@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 17</title>
+</head>
+<body>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+
+    <script>
+
+          const Guest = ["Ali","Umar","Anila"];
+         document.getElementById("demo1").innerHTML ="i invite mr " + Guest[0] + " for dinner" + "<br>";
+         document.getElementById("demo2").innerHTML ="i invite mr " + Guest[1] + " for dinner" + "<br>";
+         document.getElementById("demo3").innerHTML ="i invite miss " + Guest[2] + " for dinner" + "<br>";
+          
+         document.getElementById("demo4").innerHTML ="miss " + Guest[2] + " cannot make it thats why we have to remove it" + "<br>";
+         const removed = Guest.pop();
+         Guest.push("Usman");
+         document.getElementById("demo5").innerHTML ="i invite mr " + Guest[0] + " for dinner" + "<br>";
+         document.getElementById("demo6").innerHTML ="i invite mr " + Guest[1] + " for dinner" + "<br>";
+         document.getElementById("demo7").innerHTML ="i invite mr " + Guest[2] + " for dinner" + "<br>";
+         
+         
+         document.getElementById("demo7").innerHTML ="we found a bigger dinner table. "+"<br>";
+
+         //add new guest at the bigining of an array
+
+         Guest.splice(0, 0, "kashif");
+
+         document.getElementById("demo8").innerHTML = Guest;
+
+         //add new guest at the center of an array
+
+         Guest.splice(2, 0, "umaid");
+
+         document.getElementById("demo9").innerHTML = Guest;
+
+         ////add new guest at the end of an array using append methods
+
+         Guest.push("Mahad");
+
+         document.getElementById("demo10").innerHTML = Guest;
+
+
+         //Table is Shrinked Q18
+
+         document.getElementById("demo11").innerHTML = "Sorry, i can only add 2 guests due to table shrinked";
+
+         var i = Guest.pop();
+
+         document.getElementById("demo12").innerHTML = "Sorry, " +i+ " you are out of our table due to table shrinked";
+         
+         var i = Guest.pop();
+
+         document.getElementById("demo13").innerHTML = "Sorry, " +i+ " you are out of our table due to table shrinked";
+
+         var i = Guest.pop();
+
+         document.getElementById("demo14").innerHTML = "Sorry, " +i+ " you are out of our table due to table shrinked";
+
+         var i = Guest.pop();
+
+         document.getElementById("demo15").innerHTML = "Sorry, " +i+ " you are out of our table due to table shrinked";
+
+
+
+         document.getElementById("demo16").innerHTML = "Only "+Guest+" invited to our dinner plan";
+
+         document.getElementById("demo17").innerHTML = Guest[0]+" Still invited in our dinner plan";
+         document.getElementById("demo18").innerHTML = Guest[1]+" Still invited in our dinner plan";
+
+         Guest.pop();
+         Guest.pop();
+         
+
+
+         //after removing last two members
+         document.getElementById("demo19").innerHTML = Guest;
+         document.getElementById("demo20").innerHTML = "Each guest is removed from the array";
+
+
+
+
+
+
+
+
+
+        
+         
+         
+ 
+     
+
+
+
+         
+    </script>
+    
+</body>
+</html>

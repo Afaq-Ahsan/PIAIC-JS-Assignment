@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 43</title>
+</head>
+<body>
+    
+<script>
+    let magician = ["Afaq", "Ahsan", "Irfan", "Aslam"];
+let greatMagicians = [];
+
+function show_magician(magicianNames) {
+    magicianNames.map((item)  => {
+        console.log(item);
+    })
+}
+
+function make_them_great(magician) {
+    for (let i = 0; i <magician.length; i++) {
+        greatMagicians[i] = 'the great '+magicians[i];
+    }
+}
+
+make_them_great(magician)
+
+show_magician(magician);
+show_magician(greatMagician);
+
+
+
+</script>
+
+</body>
+</html>

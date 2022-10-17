@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 29</title>
+</head>
+<body>
+
+    <script>
+        let Fruit =["Banana","Orange", "Strawberry"];
+        
+        if (Fruit.includes("Banana")) {
+            console.log("i really like Banana");
+        }
+        
+        if (Fruit("Orange")) {
+            console.log("i really like Orange");
+        }
+        
+        if (Fruit("Strawberry")) {
+            console.log("i really like Strawberry");
+        }
+        
+        if (Fruit("banana")) {
+            console.log("i really like banana");
+        }
+        
+        if (Fruit("cheery")) {
+            console.log("i really like cheery ");
+        }
+         
+        let random_fruite = ["Banana", "Orange", "Strawberry", "almond", "Apple"];
+        
+        Fruit.forEach((item) => {
+            random_fruite.includes(item) && console.log('i really like ${item}');
+        
+        });
+        </script>
+    
+</body>
+</html>

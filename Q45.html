@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 45</title>
+</head>
+<body>
+    
+<script>
+    function carInfo(manufacturer_name , model, ...optional) {
+        let lets_Make_a_Car = {
+            manufacturer_name,
+            model,
+            ...optional,
+        };
+        return lets_Make_a_Car;
+    }
+    
+    let ToyotaYaris = carInfo("Toyota", "yaris", (color = "white"), (year = 2022));
+    let hondaCity = carInfo("Honda", "City", (year = 2022), (color = "black"));
+    let suzukialto = carInfo("suzuki", "Alto", (year = 2018));
+    console.log(ToyotaYaris);
+    console.log(hondaCity);
+    console.log(suzukialto);
+    
+    
+    function Car_Info(manufacturer_name, model,...optional) {
+        let lets_Make_a_Car = {
+            manufacturer_name,
+            model,
+            color: optional[0],
+            year : optional[1],
+        };
+        return lets_Make_a_Car;
+    }
+    
+    let ToyotaYaris1 = Car_Info(
+        "honda",
+        "accord",
+        (color ="white"),
+        (year = 2022)
+    );
+    
+    let hondaCity1 = Car_Info(
+        "Toyota",
+        "Yaris",
+        (color ="black"),
+        (year = 2022)
+    );
+    
+    let suzukialto1 = Car_Info("suzuki", "mehran", (color = null) , (year = 2018));
+    
+    console.log(ToyotaYaris1);
+    console.log(hondaCity1);
+    console.log(suzukialto1);
+    
+
+    function carInfo3(manufacturer_name, model, ...optional) {
+        let lets_Make_a_Car = {
+            manufacturer,
+            model,
+        };
+        optional.forEach((list)  => {
+            lets_Make_a_Car = { ...lets_Make_a_Car, ...list }; 
+        });
+    
+        return lets_Make_a_Car
+    }
+    
+    let ToyotaYaris3 = carInfo3(
+        "honda",
+        "accord",
+         {color : "white"},
+         { year :2022 }
+    );
+    
+    let hondaCity3 = carInfo3(
+        "Toyota",
+        "Altis",
+        {  color: "black" },
+        {  year : 2022 }
+    
+    );
+    
+    let suzukialto3 = carInfo3("Suzuki", "Mehran", { year : 2018});
+    console.log(ToyotaYaris3);
+    console.log(hondaCity3);
+    console.log(suzukialto3);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>
